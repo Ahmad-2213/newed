@@ -134,7 +134,9 @@
             "users": [
               {
                 "id": "d734da21-d8f3-4e20-ad98-fa527d269e4f",
-                "email": "t@t.tt",
+                 "reverse": {
+					"tag": "r-inbound"
+				},
                 "security": "auto",
                 "encryption": "mlkem768x25519plus.native.0rtt.5U7dB9GOJzSXRu4oSSfP-js6QKaPCG89CPWr_ap0VFI",
                 "flow": "xtls-rprx-vision"
