@@ -150,7 +150,7 @@
         "xhttpSettings": {
           "path": "/",
           "host": "tabriz-81cdcb81c8-tabriz.apps.ir-northwest1.arvancaas.ir",
-          "mode": "stream-up",
+          "mode": "stream-one",
           "extra": {
             "xmux": {
               "maxConnections": 1
