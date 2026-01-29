@@ -1,0 +1,48 @@
+{
+"policy": {
+    "levels": {
+      "0": {
+        "downlinkOnly": 0,
+        "handshake": 60,
+        "uplinkOnly": 0,
+	"bufferSize": -1
+      }
+    }
+  },
+  "log": {
+    "loglevel": "warning"
+  },
+  "outbounds": [
+{
+			"protocol": "direct" 
+		},
+   {
+      "protocol": "vless",
+      "settings": {
+                  
+            "address": "tabriz-81cdcb81c8-tabriz.apps.ir-northwest1.arvancaas.ir",
+            "port": 443,
+                "flow": "xtls-rprx-vision",
+                "encryption": "mlkem768x25519plus.native.0rtt.5U7dB9GOJzSXRu4oSSfP-js6QKaPCG89CPWr_ap0VFI",
+                "id": "d734da21-d8f3-4e20-ad98-fa527d269e4f",
+                "reverse": {
+					"tag": "r-inbound"
+				}
+              },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "tabriz-81cdcb81c8-tabriz.apps.ir-northwest1.arvancaas.ir"
+        },
+        "xhttpSettings": {
+          "mode": "stream-one",
+          "extra": { "xmux": { "maxconcurrency": 1 } },
+          "host": "tabriz-81cdcb81c8-tabriz.apps.ir-northwest1.arvancaas.ir",
+          "path": "/"
+        }
+      }
+    }
+    
+  ]
+}
