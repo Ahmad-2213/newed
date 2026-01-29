@@ -157,49 +157,16 @@
             }
           }
         }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
       }
     },
     {
-      "tag": "direct",
-      "protocol": "freedom",
-      "settings": {
-        "domainStrategy": "AsIs",
-        "userLevel": 0
-      }
-    },
-    {
-      "tag": "block",
-      "protocol": "blackhole"
-    }
+			"protocol": "direct" 
+		}
   ],
   "routing": {
     "domainStrategy": "IPIfNonMatch",
     "rules": [
-      {
-        "type": "field",
-        "inboundTag": [
-          "api"
-        ],
-        "outboundTag": "api"
-      },
-      {
-        "type": "field",
-        "outboundTag": "direct",
-        "domain": [
-          "ir"
-        ]
-      },
-      {
-        "type": "field",
-        "inboundTag": [
-          "dns-module"
-        ],
-        "outboundTag": "proxy"
-      }
+      
     ]
   }
 }
